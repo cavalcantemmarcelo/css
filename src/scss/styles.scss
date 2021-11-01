@@ -1,26 +1,35 @@
-$color-font: #33d ;
-$color-bg-default: #a9f;
-$color-bg-boxes: #FD3;
+$color-primary: #195484;
+$color-secondary: #f58220;
+$font-color-primary: #ffffff;
+$font-color-secondary: #454545;
 $font-default: Arial, Helvetica, sans-serif;
 $font-size-default: 1.6rem;
+
+@import 'fonts';
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
 
 html {
     font-size: 62.5%;
 }
 
 body {
-    background-color: $color-bg-default;
+    background-color: $color-primary;
     font-family: $font-default;
 }
 
 h1 {
-    color: $color-font;
+    color: $font-color-primary;
     text-align: center;
     margin-top: 4rem;
 }
 
 h2 {
+    color: $font-color-primary;
+    font-family: 'freshman', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
     margin-top: 4rem;
+    text-shadow: 1px 2px 8px #FFFFFF;
 }
 
 header,
@@ -36,6 +45,15 @@ footer {
     flex-flow: column;
     margin: 0 auto;
     max-width: 90vw;
+}
+
+header .container {
+    .hero {
+        background-image: url('../assets/banner-lance-me.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 20rem;
+    }
 }
 
 #sobre {
