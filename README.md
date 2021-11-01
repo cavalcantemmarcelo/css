@@ -1,17 +1,26 @@
-# Framework Simulator
-Estrutura básica de projetos front-end para estudos de HTML, JS, CSS / SASS. 
+# CSS
+## Posicionamento (display)
+- block
+- inline
+- flex
+- grid
 
-- Flexível para você adaptar para projetos e estudos.
-- Estensível, você consegue instalar novas bibliotecas e adaptar para outras linguagens.  
+## Alinhamento
+- flex: justify-content (horizontal) 
+- flex: align-item (vertical)
+- grid: 
 
-## Stack inicial
-- Babel
-- CSS
-- HTML
-- JavaScript
-- Node / NPM
-- Sass
-- Webpack
+## Direção
+- flex-direction: row / column / reverse
+- grid-template-columns
+- grid-template-rows
+
+## Posicionamento de imagens
+- object-fit: cover / contain
+- object-position
+
+## Projeto Base (framework simulator)
+- Baixar, instalar e rodar
 
 ## Instalação
 - Requer o node.js instalado
