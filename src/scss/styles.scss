@@ -1,6 +1,6 @@
-$color-font: #33d ;
-$color-bg-default: #a9f;
-$color-bg-boxes: #FD3;
+$color-font: #334466;
+$color-bg-default: #A9CCE3;
+$color-bg-boxes: #5472D3;
 $font-default: Arial, Helvetica, sans-serif;
 $font-size-default: 1.6rem;
 
@@ -43,7 +43,51 @@ footer {
 }
 
 #produtos {
+    .vitrine {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
 
+        &__item {
+            background-color: $color-bg-boxes;
+            border-radius: 1rem;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 20rem;
+            padding: .25rem 1rem;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #325782;
+            }
+        }
+
+        &__image {
+            background-color: #333;
+            height: 10rem;
+            width: 100%;
+        }
+
+        &__button {
+            background-color: $color-font;
+            border-radius: 1rem;
+            border: 1px solid $color-bg-default;
+            color: white;
+            font-weight: bold;
+            padding: 1rem 2rem;
+            font-size: $font-size-default;
+            text-decoration: none;
+            align-self: center;
+            margin-bottom: 2rem;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #274466;
+            }
+        }
+    }
 }
 
-@import 'vitrine'
+@import 'vitrine';
