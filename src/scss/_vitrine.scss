@@ -1,3 +1,9 @@
+$vitrine-bg-color: #101d3d;
+$vitrine-button-color: #ffffff;
+$vitrine-button-bg-color: #1b3365;
+$vitrine-hover-bg-color: #152d55;
+$vitrine-transition-duration: 0.3s;
+
 .vitrine {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,6 +18,11 @@
         align-items: flex-start;
         min-height: 20rem;
         padding: .25rem 1rem;
+        transition: background-color $vitrine-transition-duration ease-in-out;
+
+        &:hover {
+            background-color: $vitrine-hover-bg-color;
+        }
     }
 
     &__image {
@@ -21,15 +32,20 @@
     }
 
     &__button {
-        background-color: $color-font;
+        background-color: $vitrine-button-bg-color;
         border-radius: 1rem;
-        border: 1px solid $color-bg-default;
-        color: white;
+        border: 1px solid $vitrine-bg-color;
+        color: $vitrine-button-color;
         font-weight: bold;
         padding: 1rem 2rem;
         font-size: $font-size-default;
         text-decoration: none;
         align-self: center;
         margin-bottom: 2rem;
+        transition: background-color $vitrine-transition-duration ease-in-out;
+
+        &:hover {
+            background-color: $vitrine-hover-bg-color;
+        }
     }
 }
